@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Cadastro Profissional - Itapecuru Mirim</title>
+  <link rel="stylesheet" href="/style/cadastro.css">
+
+</head>
+<body>
+  <header>
+    <a href="paginicial.html" style="position:absolute; left: 20px; top: 20px; color:white; font-size: 20px; text-decoration:none;">🏠</a>
+    <h1>Profissionais de Itapecuru</h1>
+    <p>Conectando talentos da cidade com quem precisa</p>
+  </header>
+
+  <div class="container">
+    <h2>Cadastro de Profissional</h2>
+    <form onsubmit="irParaServicos(event)">
+      <label>Nome Completo</label>
+      <input type="text" placeholder="Seu nome completo" required />
+
+      <label>Profissão</label>
+      <select required>
+        <option value="">Selecione</option>
+        <option>Pedreiro</option>
+        <option>Eletricista</option>
+        <option>Babá</option>
+        <option>Cuidador(a)</option>
+        <option>Encanador</option>
+        <option>Outro</option>
+      </select>
+
+      <label>Telefone / WhatsApp</label>
+      <input type="tel" placeholder="(98) 9XXXX-XXXX" required />
+
+      <label>Descrição do Serviço</label>
+      <textarea rows="4" placeholder="Conte um pouco sobre o que você faz..."></textarea>
+
+      <label>Bairro em Itapecuru Mirim</label>
+      <input type="text" placeholder="Ex: Roseana Sarney" required />
+
+      <button type="submit">Cadastrar</button>
+    </form>
+  </div>
+
+  <footer>
+    © 2025 Profissionais de Itapecuru Mirim
+  </footer>
+
+  <script src="/js/cadastro.js"></script>
+</body>
+</html>
