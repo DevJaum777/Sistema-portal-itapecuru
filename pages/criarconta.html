@@ -5,17 +5,29 @@
   <meta charset="UTF-8">
   <title>Criar Conta</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- CSS externo -->
   <link rel="stylesheet" href="../style/createCount.css">
+
+  <!-- Font Awesome offline -->
+  <link rel="stylesheet" href="../fontawesome-free-6.7.2-web/fontawesome-free-6.7.2-web/css/all.min.css">
 </head>
 <body>
+
+  <div class="cabecalho-verde">
+    <h1><i class="fa-solid fa-handshake-angle"></i> Portal Itapecuru</h1>
+    <p>Vamos criar sua conta!</p>
+    <a href="login.html" class="botao-voltar"><i class="fa-solid fa-arrow-left"></i> Voltar</a>
+  </div>
+
   <div class="container">
-    <h2>Criar Conta</h2>
+    <h2><i class="fa-solid fa-user-plus"></i> Criar Conta</h2>
     <input type="text" id="novoUsuario" placeholder="Novo usuário" />
     <input type="password" id="novaSenha" placeholder="Nova senha" />
-    <button onclick="criarConta()">Criar Conta</button>
+    <button onclick="criarConta()"><i class="fa-solid fa-check"></i> Criar Conta</button>
   </div>
 
   <script src="../js/createCount.js"></script>
-
 </body>
 </html>
+

@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Serviços - Portal Itapecuru</title>
+  <link rel="stylesheet" href="../style/initialPage.css">
+  <link rel="stylesheet" href="../fontawesome-free-6.7.2-web/fontawesome-free-6.7.2-web/css/all.min.css">
+</head>
+<body>
+
+  <header>
+    <h1><i class="fa-solid fa-handshake-angle"></i> Portal Itapecuru</h1>
+    <p>Conectando você aos melhores profissionais da cidade</p>
+    <a href="login.html" class="botao-login"><i class="fa-solid fa-user"></i> Entrar / Criar Conta</a>
+  </header>
+
+  <nav>
+    <a href="paginicial.html">Início</a>
+    <a href="servicos.html">Serviços</a>
+    <a href="cadastro.html">Cadastro</a>
+    <a href="sobre.html">Sobre</a>
+  </nav>
+
+  <div class="container">
+    <section>
+      <h2>Profissionais Disponíveis</h2>
+      <div class="search-box">
+        <div style="text-align:center; margin-bottom:20px;">
+          <select id="filtroProfissao" onchange="filtrarProfissionais()">
+            <option value="">Filtrar por Profissão</option>
+            <option value="babá">Babá</option>
+            <option value="encanador">Encanador</option>
+            <option value="eletricista">Eletricista</option>
+            <option value="cabeleireiro">Cabeleireiro</option>
+            <option value="diarista">Diarista</option>
+            <option value="enfermeira">Enfermeira</option>
+          </select>
+
+          <select id="filtroBairro" onchange="filtrarProfissionais()">
+            <option value="">Filtrar por Bairro</option>
+            <option value="centro">Centro</option>
+            <option value="roseana">Roseana Sarney</option>
+            <option value="torre">Torre</option>
+          </select>
+        </div>
+        <input type="text" id="campoBusca" placeholder="Digite nome, profissão ou bairro..." onkeyup="filtrarProfissionais()">
+      </div>
+
+      <div id="listaProfissionais">
+        <div class="card">
+          <h3>Maria da Silva</h3>
+          <p><strong>Profissão:</strong> Babá</p>
+          <p><strong>Bairro:</strong> Centro</p>
+          <p><strong>Contato:</strong> (98) 9XXXX-XXXX</p>
+          <p><strong>Sobre:</strong> Experiência com crianças de 0 a 5 anos.</p>
+        </div>
+        <div class="card">
+          <h3>João dos Santos</h3>
+          <p><strong>Profissão:</strong> Encanador</p>
+          <p><strong>Bairro:</strong> Roseana Sarney</p>
+          <p><strong>Contato:</strong> (98) 9XXXX-XXXX</p>
+          <p><strong>Sobre:</strong> Consertos rápidos e atendimento 24h.</p>
+        </div>
+        <div class="card">
+          <h3>Carla Costa</h3>
+          <p><strong>Profissão:</strong> Enfermeira</p>
+          <p><strong>Bairro:</strong> Centro</p>
+          <p><strong>Contato:</strong> (98) 9XXXX-XXXX</p>
+          <p><strong>Sobre:</strong> Auxílio médico.</p>
+        </div>
+        <div class="card">
+          <h3>Augusto Melo</h3>
+          <p><strong>Profissão:</strong> Eletricista</p>
+          <p><strong>Bairro:</strong> Torre</p>
+          <p><strong>Contato:</strong> (98) 9XXXX-XXXX</p>
+          <p><strong>Sobre:</strong> Serviços de elétrica.</p>
+        </div>
+        <div class="card">
+          <h3>Lukinha Portela</h3>
+          <p><strong>Profissão:</strong> Cabeleireiro</p>
+          <p><strong>Bairro:</strong> Centro</p>
+          <p><strong>Contato:</strong> (98) 9XXXX-XXXX</p>
+          <p><strong>Sobre:</strong> Corte rápido, tramontina.</p>
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <footer>
+    © 2025 Profissionais de Itapecuru Mirim
+  </footer>
+
+  <script src="../js/initialPage.js"></script>
+</body>
+</html>

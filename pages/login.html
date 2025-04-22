@@ -1,22 +1,35 @@
-
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
   <meta charset="UTF-8">
   <title>Login</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- CSS externo -->
   <link rel="stylesheet" href="../style/login.css">
+
+  <!-- Font Awesome offline -->
+  <link rel="stylesheet" href="../fontawesome-free-6.7.2-web/fontawesome-free-6.7.2-web/css/all.min.css">
 </head>
-
-
 <body>
-  <div class="login-container">
-    <h2>Login</h2>
-    <input type="text" id="login" placeholder="Usuário" />
-    <input type="password" id="senha" placeholder="Senha" />
-    <button onclick="verificarLogin()">Entrar</button><br><br><a href="criarconta.html">Criar Conta</a>
+
+  <div class="cabecalho-verde">
+    <h1><i class="fa-solid fa-handshake-angle"></i> Portal Itapecuru</h1>
+    <h3>Bem-vindo de volta!</h3>
+    <a href="paginicial.html" class="botao-voltar"><i class="fa-solid fa-arrow-left"></i> Voltar</a>
   </div>
 
-  <script src="../js/login.js"></script>
+  <div class="container">
+    <h2><i class="fa-solid fa-right-to-bracket"></i> Login</h2>
+    <form class="formulario">
+      <input type="text" placeholder="Usuário" required><br>
+      <input type="password" placeholder="Senha" required><br>
+      <button type="submit"><i class="fa-solid fa-right-to-bracket"></i> Entrar</button>
+      <br><br>
+      <a href="criarconta.html">Não tem conta? Criar agora</a>
+    </form>
+  </div>
+
 </body>
 </html>
+

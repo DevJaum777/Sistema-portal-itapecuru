@@ -1,5 +1,4 @@
 
-
 body {
 font-family: 'Segoe UI', sans-serif;
 margin: 0;
@@ -45,8 +44,9 @@ padding: 20px;
 }
 
 section {
-display: none;
+display: block;
 }
+  
 
 section.active {
 display: block;
@@ -75,9 +75,9 @@ box-shadow: 0 4px 12px rgba(0,0,0,0.08);
 }
 
 .card:hover{
-    cursor: pointer;
-    transition: all ease-in-out 0.6s;
-    transform: scale(1.05);
+cursor: pointer;
+transition: all ease-in-out 0.6s;
+transform: scale(1.05);
 }
 
 .search-box {
@@ -92,4 +92,95 @@ max-width: 400px;
 font-size: 16px;
 border-radius: 8px;
 border: 1px solid #ccc;
+}
+
+.botao-voltar {
+display: inline-block;
+margin-top: 1rem;
+background-color: #004d26;
+color: white;
+padding: 10px 25px;
+text-decoration: none;
+border-radius: 25px;
+font-weight: bold;
+}
+.botao-login {
+margin-top: 1rem;
+display: inline-block;
+background-color: #ffffff;
+color: #007c3c;
+padding: 10px 20px;
+text-decoration: none;
+border-radius: 20px;
+font-weight: bold;
+}
+.botao-cadastro {
+display: inline-block;
+margin-top: 1rem;
+background-color: #007c3c;
+color: white;
+padding: 10px 20px;
+border-radius: 25px;
+text-decoration: none;
+font-weight: bold;
+}
+  
+.servicos {
+padding: 2rem;
+background-color: #ffffff;
+}
+  
+.grid-servicos {
+display: grid;
+grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+gap: 1rem;
+margin-top: 1rem;
+}
+  
+.card-servico {
+background-color: #e6f5ec;
+padding: 1.5rem;
+text-align: center;
+border-radius: 15px;
+font-size: 1.1rem;
+box-shadow: 0 2px 5px rgba(0,0,0,0.1);   
+  }  
+  
+  .depoimentos {
+background-color: #f0fbf6;
+padding: 2rem;
+text-align: center;
+}
+  
+.depoimentos-grid {
+display: flex;
+flex-wrap: wrap;
+justify-content: center;
+gap: 2rem;
+margin-top: 1rem;
+}
+  
+.depo-card {
+background-color: #ffffff;
+padding: 1rem;
+border-radius: 12px;
+width: 250px;
+box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+  
+.depo-card img {
+width: 80px;
+height: 80px;
+border-radius: 50%;
+}
+
+@media (max-width: 600px) {
+.grid-servicos {
+grid-template-columns: 1fr 1fr;
+  } 
+  
+.depoimentos-grid {
+flex-direction: column;
+align-items: center;
+    }
 }

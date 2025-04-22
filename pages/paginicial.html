@@ -3,99 +3,83 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Menu Principal</title>
+  <title>Portal Itapecuru</title>
   <link rel="stylesheet" href="../style/initialPage.css">
+  <link rel="stylesheet" href="../fontawesome-free-6.7.2-web/fontawesome-free-6.7.2-web/css/all.min.css">
 </head>
 
 <body>
 
   <header>
-    <a href="login.html" style="position:absolute; top:20px; right:20px; color:white; text-decoration:none; font-weight:bold;"> Login / Criar Conta</a>
-    <h1>Bem-vindo ao Portal Itapecuru</h1>
+    <h1><i class="fa-solid fa-handshake-angle"></i> Portal Itapecuru</h1>
     <p>Conectando você aos melhores profissionais da cidade</p>
+    <a href="login.html" class="botao-login"><i class="fa-solid fa-user"></i> Entrar / Criar Conta</a>
   </header>
 
   <nav>
-    <a href="#" onclick="mostrarSecao('inicio')">Início</a>
-    <a href="#" onclick="mostrarSecao('servicos')">Serviços</a>
+    <a href="paginicial.html">Início</a>
+    <a href="servicos.html">Serviços</a>
     <a href="cadastro.html">Cadastro</a>
-    <a href="#" onclick="mostrarSecao('sobre')">Sobre</a>
+    <a href="sobre.html">Sobre</a>
   </nav>
 
   <div class="container">
-    <section id="inicio" class="active">
-      <h2>Página Inicial</h2>
-      <p>Bem-vindo ao nosso portal de serviços locais! Use o menu acima para navegar.</p>
+    <section class="intro">
+      <h2>Visibilidade para Profissionais Locais</h2>
+      <p>Cadastre-se na nossa plataforma e seja facilmente encontrado pelos moradores da cidade.</p>
+      <a href="cadastro.html" class="botao-cadastro"><i class="fa-solid fa-circle-plus"></i> Quero me cadastrar</a>
     </section>
 
-    <section id="servicos">
-      <h2>Profissionais Disponíveis</h2>
+    <section class="servicos">
+      <h2><i class="fa-solid fa-screwdriver-wrench"></i> Principais Serviços</h2>
+      <div class="grid-servicos">
+        <div class="card-servico"><i class="fa-solid fa-hammer"></i> Marceneiro</div>
+        <div class="card-servico"><i class="fa-solid fa-bolt"></i> Eletricista</div>
+        <div class="card-servico"><i class="fa-solid fa-sink"></i> Encanador</div>
+        <div class="card-servico"><i class="fa-solid fa-broom"></i> Diarista</div>
+        <div class="card-servico"><i class="fa-solid fa-scissors"></i> Cabeleireiro</div>
+        <div class="card-servico"><i class="fa-solid fa-user-nurse"></i> Enfermeira</div>
+      </div>
+    </section>
 
-      <div class="search-box">
-    <div style="text-align:center; margin-bottom:20px;">
-      <select id="filtroProfissao" onchange="filtrarProfissionais()">
-        <option value="">Filtrar por Profissão</option>
-        <option value="babá">Babá</option>
-        <option value="encanador">Encanador</option>
-      </select>
+    <section class="depoimentos">
+      <h2><i class="fa-solid fa-comment-dots"></i> Profissionais recomendam</h2>
+      <div class="depoimentos-grid">
+        <div class="depo-card">
+          <img src="https://randomuser.me/api/portraits/men/35.jpg" alt="José">
+          <p>"A visibilidade que ganhei aqui mudou minha renda."</p>
+          <strong>José - Eletricista</strong>
+        </div>
+        <div class="depo-card">
+          <img src="https://randomuser.me/api/portraits/women/44.jpg" alt="Ana">
+          <p>"Agora tenho clientes todos os dias da semana!"</p>
+          <strong>Ana - Diarista</strong>
+        </div>
+      </div>     
+      <div class="depoimentos-grid">
+        <div class="depo-card">
+          <img src="https://randomuser.me/api/portraits/men/35.jpg" alt="José">
+          <p>"A visibilidade que ganhei aqui mudou minha renda."</p>
+          <strong>José - Eletricista</strong>
+        </div>
+        <div class="depo-card">
+          <img src="https://randomuser.me/api/portraits/women/44.jpg" alt="Ana">
+          <p>"Agora tenho clientes todos os dias da semana!"</p>
+          <strong>Ana - Diarista</strong>
+        </div>
+      </div>
+    </section>
 
-      <select id="filtroBairro" onchange="filtrarProfissionais()">
-        <option value="">Filtrar por Bairro</option>
-        <option value="centro">Centro</option>
-        <option value="roseana">Roseana Sarney</option>
-      </select>
+    <div class="voltar-container">
+      <a href="sobre.html" class="botao-voltar"><i class="fa-solid fa-circle-info"></i> Sobre o Projeto</a>
     </div>
-        <input type="text" id="campoBusca" placeholder="Digite nome, profissão ou bairro..." onkeyup="filtrarProfissionais()">
-      </div>
-
-      <div id="listaProfissionais">
-
-        <div class="card">
-          <h3>Maria da Silva</h3>
-          <p><strong>Profissão:</strong> Babá</p>
-          <p><strong>Bairro:</strong> Centro</p>
-          <p><strong>Contato:</strong> (98) 9XXXX-XXXX</p>
-          <p><strong>Sobre:</strong> Experiência com crianças de 0 a 5 anos.</p>
-        </div>
-        
-        <div class="card">
-          <h3>João dos Santos</h3>
-          <p><strong>Profissão:</strong> Encanador</p>
-          <p><strong>Bairro:</strong> Roseana Sarney</p>
-          <p><strong>Contato:</strong> (98) 9XXXX-XXXX</p>
-          <p><strong>Sobre:</strong> Consertos rápidos e atendimento 24h.</p>
-        </div>
-
-        <div class="card">
-          <h3>Maria da Silva</h3>
-          <p><strong>Profissão:</strong> Babá</p>
-          <p><strong>Bairro:</strong> Centro</p>
-          <p><strong>Contato:</strong> (98) 9XXXX-XXXX</p>
-          <p><strong>Sobre:</strong> Experiência com crianças de 0 a 5 anos.</p>
-        </div>
-
-        <div class="card">
-          <h3>João dos Santos</h3>
-          <p><strong>Profissão:</strong> Eletricista</p>
-          <p><strong>Bairro:</strong> Torre</p>
-          <p><strong>Contato:</strong> (98) 9XXXX-XXXX</p>
-          <p><strong>Sobre:</strong> C e atendimento 24h.</p>
-        </div>
-
-      </div>
-    </section>
-
-    <section id="sobre">
-      <h2>Sobre o Projeto</h2>
-      <p>Este portal foi criado para facilitar a conexão entre prestadores de serviço e moradores de Itapecuru Mirim.</p>
-    </section>
   </div>
 
   <footer>
     © 2025 Profissionais de Itapecuru Mirim
   </footer>
 
-  <script src="../js/initialPage.js"></script>
-
 </body>
 </html>
+
+

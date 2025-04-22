@@ -57,3 +57,25 @@ body {
     background-color: #eee;
     margin-top: 40px;
   }
+  .botao-voltar {
+    display: inline-block;
+    margin-top: 1rem;
+    background-color: #004d26;
+    color: white;
+    padding: 10px 25px;
+    text-decoration: none;
+    border-radius: 25px;
+    font-weight: bold;
+  }
+  .button-cad{
+    display: inline-block;
+    margin-top: 1rem;
+    background-color: #38ad17;
+    color: white;
+    padding: 10px 25px;
+    text-decoration: none;
+    border-radius: 25px;
+    font-weight: bold;
+  }
+
+  
