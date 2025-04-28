@@ -1,70 +1,80 @@
+/* Define o estilo geral do corpo da página */
 body {
-    font-family: 'Segoe UI', sans-serif;
-    background-color: #f4fdf6;
-    margin: 0;
-    padding: 0;
-  }
-  
-  .cabecalho-verde {
-    background-color: #38ad17;
-    color: white;
-    padding: 2rem 1rem;
-    text-align: center;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
-  }
-  
-  .cabecalho-verde h1 i {
-    margin-right: 10px;
-  }
-  
-  .botao-voltar {
-    display: inline-block;
-    margin-top: 1rem;
-    background-color: #004d26;
-    color: white;
-    padding: 10px 25px;
-    text-decoration: none;
-    border-radius: 25px;
-    font-weight: bold;
-  }
-  
-  .container {
-    max-width: 300px;
-    margin: 50px auto;
-    padding: 40px 20px;
-    background: white;
-    border-radius: 10px;
-    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-    text-align: center;
-  }
-  
-  .container h2 {
-    margin-bottom: 30px;
-    font-size: 26px;
-  }
-  
-  input {
-    display: block;
-    margin: 20px auto;
-    padding: 12px;
-    width: 70%;
-    border-radius: 30px;
-    border: 1px solid #ccc;
-    font-size: 16px;
-  }
-  
-  button {
-    background-color: #38ad17;
-    color: white;
-    padding: 12px 30px;
-    border: none;
-    border-radius: 25px;
-    cursor: pointer;
-    font-weight: bold;
-    margin-top: 20px;
-  }
-  
-  button:hover {
-    background-color: #2c8512;
-  }
+  font-family: 'Segoe UI', sans-serif; /* Fonte principal */
+  background-color: #f4fdf6; /* Cor de fundo (verde bem claro) */
+  margin: 0; /* Remove margens padrão */
+  padding: 0; /* Remove preenchimento padrão */
+}
+
+/* Estilo para o cabeçalho com fundo verde */
+.cabecalho-verde {
+  background-color: #38ad17; /* Cor de fundo verde */
+  color: white; /* Cor do texto branco */
+  padding: 2rem 1rem; /* Espaçamento interno: 2rem em cima/baixo e 1rem nos lados */
+  text-align: center; /* Centraliza o texto */
+  box-shadow: 0 2px 5px rgba(0,0,0,0.2); /* Sombra abaixo do cabeçalho */
+}
+
+/* Estilo para o ícone dentro do título do cabeçalho */
+.cabecalho-verde h1 i {
+  margin-right: 10px; /* Espaço à direita do ícone */
+}
+
+/* Estilo para o botão de voltar */
+.botao-voltar {
+  display: inline-block; /* Exibe como bloco em linha */
+  margin-top: 1rem; /* Margem superior */
+  background-color: #004d26; /* Fundo verde escuro */
+  color: white; /* Texto branco */
+  padding: 10px 25px; /* Espaçamento interno */
+  text-decoration: none; /* Remove sublinhado */
+  border-radius: 25px; /* Bordas arredondadas */
+  font-weight: bold; /* Texto em negrito */
+}
+
+/* Container principal para o conteúdo */
+.container {
+  max-width: 300px; /* Largura máxima do container */
+  margin: 50px auto; /* Centraliza e adiciona espaçamento vertical */
+  padding: 40px 20px; /* Espaçamento interno */
+  background: white; /* Fundo branco */
+  border-radius: 10px; /* Bordas arredondadas */
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1); /* Sombra ao redor do container */
+  text-align: center; /* Centraliza o conteúdo */
+}
+
+/* Estilo para o título dentro do container */
+.container h2 {
+  margin-bottom: 30px; /* Espaçamento inferior */
+  font-size: 26px; /* Tamanho da fonte */
+}
+
+/* Estilo para inputs de texto */
+input {
+  display: block; /* Exibe como bloco */
+  margin: 20px auto; /* Espaçamento em volta e centralização */
+  padding: 12px; /* Espaçamento interno */
+  width: 70%; /* Largura de 70% do container */
+  border-radius: 30px; /* Bordas bem arredondadas */
+  border: 1px solid #ccc; /* Borda cinza clara */
+  font-size: 16px; /* Tamanho da fonte */
+}
+
+/* Estilo para o botão */
+button {
+  background-color: #38ad17; /* Fundo verde */
+  color: white; /* Texto branco */
+  padding: 12px 30px; /* Espaçamento interno */
+  border: none; /* Sem borda */
+  border-radius: 25px; /* Bordas arredondadas */
+  cursor: pointer; /* Cursor de mão ao passar o mouse */
+  font-weight: bold; /* Texto em negrito */
+  margin-top: 20px; /* Espaçamento superior */
+}
+
+/* Efeito ao passar o mouse sobre o botão */
+button:hover {
+  background-color: #2c8512; /* Muda para um verde mais escuro */
+}
+
   

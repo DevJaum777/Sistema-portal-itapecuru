@@ -1,70 +1,91 @@
+/* ========== ESTILOS GERAIS ========== */
+
+/* Define o estilo base do corpo da página */
 body {
-    font-family: 'Segoe UI', sans-serif;
-    background-color: #f4fdf6;
-    margin: 0;
-    padding: 0;
-  }
-  
-  .cabecalho-verde {
-    background-color: #38ad17;
-    color: white;
-    padding: 2rem 1rem;
-    text-align: center;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
-  }
-  
-  .cabecalho-verde h1 i {
-    margin-right: 10px;
-  }
-  
-  .botao-voltar {
-    display: inline-block;
-    margin-top: 1rem;
-    background-color: #004d26;
-    color: white;
-    padding: 10px 25px;
-    text-decoration: none;
-    border-radius: 25px;
-    font-weight: bold;
-  }
-  
-  .container {
-    max-width: 300px;
-    margin: 50px auto;
-    padding: 40px 20px;
-    background: white;
-    border-radius: 10px;
-    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-    text-align: center;
-  }
-  
-  .container h2 {
-    margin-bottom: 30px;
-    font-size: 26px;
-  }
-  
-  input {
-    display: block;
-    margin: 1px auto;
-    padding: 12px;
-    width: 70%;
-    border-radius: 30px;
-    border: 1px solid #ccc;
-    font-size: 16px;
-  }
-  
-  button {
-    background-color: #38ad17;
-    color: white;
-    padding: 12px 30px;
-    border: none;
-    border-radius: 25px;
-    cursor: pointer;
-    font-weight: bold;
-    margin-top: 20px;
-  }
-  
-  button:hover {
-    background-color: #2c8512;
-  }
-  
+  font-family: 'Segoe UI', sans-serif; /* Fonte padrão moderna */
+  background-color: #f4fdf6; /* Cor de fundo verde bem clarinha */
+  margin: 0;
+  padding: 0;
+}
+
+/* ========== CABEÇALHO VERDE ========== */
+
+/* Estilização do cabeçalho */
+.cabecalho-verde {
+  background-color: #38ad17; /* Verde vibrante */
+  color: white; /* Texto branco */
+  padding: 2rem 1rem;
+  text-align: center;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.2); /* Sombra para profundidade */
+}
+
+/* Ajuste no ícone dentro do título */
+.cabecalho-verde h1 i {
+  margin-right: 10px; /* Espaço entre o ícone e o texto */
+}
+
+/* ========== BOTÃO VOLTAR ========== */
+
+/* Estilo do botão de voltar */
+.botao-voltar {
+  display: inline-block;
+  margin-top: 1rem;
+  background-color: #004d26; /* Verde escuro */
+  color: white;
+  padding: 10px 25px;
+  text-decoration: none; /* Remove sublinhado */
+  border-radius: 25px; /* Bordas arredondadas */
+  font-weight: bold;
+}
+
+/* ========== CONTAINER DO FORMULÁRIO ========== */
+
+/* Container do formulário */
+.container {
+  max-width: 300px; /* Largura máxima */
+  margin: 50px auto; /* Centralizado com margem */
+  padding: 40px 20px;
+  background: white; /* Fundo branco */
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1); /* Sombra suave */
+  text-align: center; /* Centraliza o conteúdo */
+}
+
+/* Título dentro do container */
+.container h2 {
+  margin-bottom: 30px;
+  font-size: 26px;
+}
+
+/* ========== INPUTS ========== */
+
+/* Estilo dos campos de input */
+input {
+  display: block;
+  margin: 1px auto; /* Centraliza input e espaço mínimo */
+  padding: 12px;
+  width: 70%;
+  border-radius: 30px; /* Borda bem arredondada */
+  border: 1px solid #ccc; /* Cor da borda cinza clara */
+  font-size: 16px;
+}
+
+/* ========== BOTÃO DE ENVIO ========== */
+
+/* Estilização do botão */
+button {
+  background-color: #38ad17; /* Cor verde igual ao cabeçalho */
+  color: white;
+  padding: 12px 30px;
+  border: none; /* Sem borda */
+  border-radius: 25px;
+  cursor: pointer; /* Muda o cursor para mãozinha */
+  font-weight: bold;
+  margin-top: 20px;
+}
+
+/* Efeito hover no botão */
+button:hover {
+  background-color: #2c8512; /* Verde mais escuro ao passar o mouse */
+}
+

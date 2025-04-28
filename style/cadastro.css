@@ -1,81 +1,94 @@
+/* Define estilo geral para o corpo da página */
 body {
-    font-family: 'Segoe UI', sans-serif;
-    background: #fffafa;
-    margin: 0;
-    padding: 0;
-  }
+  font-family: 'Segoe UI', sans-serif; /* Fonte principal */
+  background: #fffafa; /* Cor de fundo (branco levemente rosado) */
+  margin: 0; /* Remove a margem padrão */
+  padding: 0; /* Remove o padding padrão */
+}
 
-  header {
-    background-color: #38ad17;
-    padding: 20px;
-    color: white;
-    text-align: center;
-  }
+/* Estilos para o cabeçalho da página */
+header {
+  background-color: #38ad17; /* Fundo verde */
+  padding: 20px; /* Espaçamento interno */
+  color: white; /* Cor do texto */
+  text-align: center; /* Centraliza o texto */
+}
 
-  .container {
-    max-width: 800px;
-    margin: 20px auto;
-    padding: 20px;
-  }
+/* Container principal para o conteúdo */
+.container {
+  max-width: 800px; /* Largura máxima do conteúdo */
+  margin: 20px auto; /* Centraliza o container com margem superior e inferior */
+  padding: 20px; /* Espaçamento interno */
+}
 
-  form {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-  }
+/* Estilos para o formulário */
+form {
+  display: flex; /* Define o formulário como flexbox */
+  flex-direction: column; /* Organiza os elementos em coluna */
+  gap: 10px; /* Espaço entre os elementos do formulário */
+}
 
-  input, select, textarea, button {
-    padding: 10px;
-    border-radius: 5px;
-    border: 1px solid #ccc;
-    font-size: 1em;
-  }
+/* Estilos comuns para inputs, selects, textareas e botões */
+input, select, textarea, button {
+  padding: 10px; /* Espaçamento interno */
+  border-radius: 5px; /* Bordas arredondadas */
+  border: 1px solid #ccc; /* Borda cinza clara */
+  font-size: 1em; /* Tamanho da fonte */
+}
 
-  button {
-    background-color: #38ad17;
-    color: white;
-    font-weight: bold;
-    cursor: pointer;
-  }
+/* Estilos específicos para o botão */
+button {
+  background-color: #38ad17; /* Fundo verde */
+  color: white; /* Texto branco */
+  font-weight: bold; /* Texto em negrito */
+  cursor: pointer; /* Cursor de mão ao passar por cima */
+}
 
-  button:hover {
-    background-color: #38ad17;
-  }
+/* Efeito ao passar o mouse sobre o botão */
+button:hover {
+  background-color: #38ad17; /* Mantém a mesma cor ao passar o mouse */
+}
 
-  .card {
-    background-color: white;
-    padding: 15px;
-    border-radius: 10px;
-    margin: 15px 0;
-    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
-    text-align: left;
-  }
+/* Estilo dos cartões (cards) que apresentam informações */
+.card {
+  background-color: white; /* Fundo branco */
+  padding: 15px; /* Espaçamento interno */
+  border-radius: 10px; /* Bordas arredondadas */
+  margin: 15px 0; /* Espaçamento acima e abaixo */
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1); /* Sombra leve */
+  text-align: left; /* Alinha o texto à esquerda */
+}
 
-  footer {
-    text-align: center;
-    padding: 20px;
-    background-color: #eee;
-    margin-top: 40px;
-  }
-  .botao-voltar {
-    display: inline-block;
-    margin-top: 1rem;
-    background-color: #004d26;
-    color: white;
-    padding: 10px 25px;
-    text-decoration: none;
-    border-radius: 25px;
-    font-weight: bold;
-  }
-  .button-cad{
-    display: inline-block;
-    margin-top: 1rem;
-    background-color: #38ad17;
-    color: white;
-    padding: 10px 25px;
-    text-decoration: none;
-    border-radius: 25px;
-    font-weight: bold;
-  }
+/* Estilos para o rodapé da página */
+footer {
+  text-align: center; /* Centraliza o texto */
+  padding: 20px; /* Espaçamento interno */
+  background-color: #eee; /* Cor de fundo cinza claro */
+  margin-top: 40px; /* Espaço acima do rodapé */
+}
+
+/* Estilo para o botão de voltar */
+.botao-voltar {
+  display: inline-block; /* Exibe como bloco inline */
+  margin-top: 1rem; /* Margem superior */
+  background-color: #004d26; /* Fundo verde escuro */
+  color: white; /* Texto branco */
+  padding: 10px 25px; /* Espaçamento interno */
+  text-decoration: none; /* Remove sublinhado */
+  border-radius: 25px; /* Bordas arredondadas */
+  font-weight: bold; /* Texto em negrito */
+}
+
+/* Estilo para botão de cadastro */
+.button-cad {
+  display: inline-block; /* Exibe como bloco inline */
+  margin-top: 1rem; /* Margem superior */
+  background-color: #38ad17; /* Fundo verde */
+  color: white; /* Texto branco */
+  padding: 10px 25px; /* Espaçamento interno */
+  text-decoration: none; /* Remove sublinhado */
+  border-radius: 25px; /* Bordas arredondadas */
+  font-weight: bold; /* Texto em negrito */
+}
 
   

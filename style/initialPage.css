@@ -1,186 +1,211 @@
-
+/* Estilo geral do corpo da página */
 body {
-font-family: 'Segoe UI', sans-serif;
-margin: 0;
-padding: 0;
-background: #fffafa;
+  font-family: 'Segoe UI', sans-serif; /* Fonte principal */
+  margin: 0; /* Remove margens padrão */
+  padding: 0; /* Remove preenchimento padrão */
+  background: #fffafa; /* Cor de fundo */
 }
 
+/* Estilo do cabeçalho principal */
 header {
-background-color: #38ad17;
-padding: 20px;
-color: white;
-text-align: center;
+  background-color: #38ad17; /* Fundo verde */
+  padding: 20px; /* Espaçamento interno */
+  color: white; /* Texto branco */
+  text-align: center; /* Centraliza o texto */
 }
 
+/* Barra de navegação */
 nav {
-background-color: #fff;
-display: flex;
-justify-content: space-around;
-padding: 15px 0;
-box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-position: sticky;
-top: 0;
-z-index: 10;
+  background-color: #fff; /* Fundo branco */
+  display: flex; /* Layout flexível */
+  justify-content: space-around; /* Espaço igual entre os itens */
+  padding: 15px 0; /* Espaçamento vertical */
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1); /* Sombra abaixo do menu */
+  position: sticky; /* Fixa o menu no topo ao rolar */
+  top: 0; /* Alinha no topo */
+  z-index: 10; /* Sobrepõe outros elementos */
 }
 
+/* Estilo dos links de navegação */
 nav a {
-text-decoration: none;
-color: #38ad17;
-font-weight: bold;
-padding: 8px 12px;
-border-radius: 8px;
-transition: background-color 0.3s;
+  text-decoration: none; /* Remove sublinhado */
+  color: #38ad17; /* Cor do texto verde */
+  font-weight: bold; /* Texto em negrito */
+  padding: 8px 12px; /* Espaçamento interno */
+  border-radius: 8px; /* Bordas arredondadas */
+  transition: background-color 0.3s; /* Suaviza a troca de cor */
 }
 
+/* Efeito ao passar o mouse sobre os links */
 nav a:hover {
-background-color: #ffe5e5;
+  background-color: #ffe5e5; /* Fundo levemente rosado */
 }
 
+/* Container centralizado */
 .container {
-max-width: 800px;
-margin: 40px auto;
-padding: 20px;
+  max-width: 800px; /* Largura máxima */
+  margin: 40px auto; /* Centraliza com margem */
+  padding: 20px; /* Espaçamento interno */
 }
 
+/* Estilo padrão para sections */
 section {
-display: block;
+  display: block; /* Mantém visível */
 }
-  
 
+/* Estilo para section ativa com animação */
 section.active {
-display: block;
-animation: fadeIn 0.5s ease;
+  display: block;
+  animation: fadeIn 0.5s ease; /* Animação de aparecimento */
 }
 
+/* Animação de aparecimento */
 @keyframes fadeIn {
-from { opacity: 0; transform: translateY(10px); }
-to { opacity: 1; transform: translateY(0); }
+  from { opacity: 0; transform: translateY(10px); } /* Começa invisível e deslocado */
+  to { opacity: 1; transform: translateY(0); } /* Termina visível no lugar */
 }
 
+/* Rodapé da página */
 footer {
-text-align: center;
-padding: 20px;
-background-color: #eee;
-margin-top: 40px;
+  text-align: center; /* Centraliza o texto */
+  padding: 20px;
+  background-color: #eee; /* Cinza claro */
+  margin-top: 40px; /* Espaçamento acima */
 }
 
+
+/* Estilo dos cartões de conteúdo */
 .card {
-background: white;
-padding: 20px;
-border-radius: 12px;
-margin-bottom: 2rem;
-box-shadow: 0 4px 12px rgba(0,0,0,0.08);
-
+  background: white; /* Fundo branco */
+  padding: 20px;
+  border-radius: 12px; /* Bordas arredondadas */
+  margin-bottom: 2rem; /* Espaçamento inferior */
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08); /* Sombra leve */
 }
 
-.card:hover{
-cursor: pointer;
-transition: all ease-in-out 0.6s;
-transform: scale(1.05);
+/* Efeito hover nos cards */
+.card:hover {
+  cursor: pointer; /* Cursor de mão */
+  transition: all ease-in-out 0.6s; /* Animação suave */
+  transform: scale(1.05); /* Aumenta o tamanho */
 }
 
+/* Caixa de busca */
 .search-box {
-text-align: center;
-margin-bottom: 20px;
+  text-align: center;
+  margin-bottom: 20px;
 }
 
+/* Input da busca */
 .search-box input {
-padding: 10px;
-width: 80%;
-max-width: 400px;
-font-size: 16px;
-border-radius: 8px;
-border: 1px solid #ccc;
+  padding: 10px;
+  width: 80%;
+  max-width: 400px;
+  font-size: 16px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
 }
 
+/* Botão de voltar */
 .botao-voltar {
-display: inline-block;
-margin-top: 1rem;
-background-color: #004d26;
-color: white;
-padding: 10px 25px;
-text-decoration: none;
-border-radius: 25px;
-font-weight: bold;
-}
-.botao-login {
-margin-top: 1rem;
-display: inline-block;
-background-color: #ffffff;
-color: #007c3c;
-padding: 10px 20px;
-text-decoration: none;
-border-radius: 20px;
-font-weight: bold;
-}
-.botao-cadastro {
-display: inline-block;
-margin-top: 1rem;
-background-color: #007c3c;
-color: white;
-padding: 10px 20px;
-border-radius: 25px;
-text-decoration: none;
-font-weight: bold;
-}
-  
-.servicos {
-padding: 2rem;
-background-color: #ffffff;
-}
-  
-.grid-servicos {
-display: grid;
-grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
-gap: 1rem;
-margin-top: 1rem;
-}
-  
-.card-servico {
-background-color: #e6f5ec;
-padding: 1.5rem;
-text-align: center;
-border-radius: 15px;
-font-size: 1.1rem;
-box-shadow: 0 2px 5px rgba(0,0,0,0.1);   
-  }  
-  
-  .depoimentos {
-background-color: #f0fbf6;
-padding: 2rem;
-text-align: center;
-}
-  
-.depoimentos-grid {
-display: flex;
-flex-wrap: wrap;
-justify-content: center;
-gap: 2rem;
-margin-top: 1rem;
-}
-  
-.depo-card {
-background-color: #ffffff;
-padding: 1rem;
-border-radius: 12px;
-width: 250px;
-box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-}
-  
-.depo-card img {
-width: 80px;
-height: 80px;
-border-radius: 50%;
+  display: inline-block;
+  margin-top: 1rem;
+  background-color: #004d26;
+  color: white;
+  padding: 10px 25px;
+  text-decoration: none;
+  border-radius: 25px;
+  font-weight: bold;
 }
 
-@media (max-width: 600px) {
+/* Botão de login */
+.botao-login {
+  margin-top: 1rem;
+  display: inline-block;
+  background-color: #ffffff;
+  color: #007c3c;
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 20px;
+  font-weight: bold;
+}
+
+/* Botão de cadastro */
+.botao-cadastro {
+  display: inline-block;
+  margin-top: 1rem;
+  background-color: #007c3c;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 25px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+/* Seção de serviços */
+.servicos {
+  padding: 2rem;
+  background-color: #ffffff;
+}
+
+/* Grid para organizar os serviços */
 .grid-servicos {
-grid-template-columns: 1fr 1fr;
-  } 
-  
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(140px, 1fr)); /* Grid responsivo */
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+/* Cartão de cada serviço */
+.card-servico {
+  background-color: #e6f5ec; /* Verde bem claro */
+  padding: 1.5rem;
+  text-align: center;
+  border-radius: 15px;
+  font-size: 1.1rem;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+/* Seção de depoimentos */
+.depoimentos {
+  background-color: #f0fbf6;
+  padding: 2rem;
+  text-align: center;
+}
+
+/* Grid para organizar os depoimentos */
 .depoimentos-grid {
-flex-direction: column;
-align-items: center;
-    }
+  display: flex;
+  flex-wrap: wrap; /* Permite quebra de linha */
+  justify-content: center; /* Centraliza os depoimentos */
+  gap: 2rem;
+  margin-top: 1rem;
+}
+
+/* Cartão individual de depoimento */
+.depo-card {
+  background-color: #ffffff;
+  padding: 1rem;
+  border-radius: 12px;
+  width: 250px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+/* Imagem do depoente */
+.depo-card img {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%; /* Deixa a imagem circular */
+}
+
+/* Estilos específicos para telas menores */
+@media (max-width: 600px) {
+  .grid-servicos {
+      grid-template-columns: 1fr 1fr; /* 2 colunas no grid */
+  }
+
+  .depoimentos-grid {
+      flex-direction: column; /* Empilha os depoimentos */
+      align-items: center; /* Centraliza na vertical */
+  }
 }
