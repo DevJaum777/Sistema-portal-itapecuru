@@ -1,145 +1,116 @@
+/* initialPage.css */
+
 /* Estilo geral do corpo da página */
 body {
-  font-family: 'Segoe UI', sans-serif; /* Fonte principal */
-  margin: 0; /* Remove margens padrão */
-  padding: 0; /* Remove preenchimento padrão */
-  background: #fffafa; /* Cor de fundo */
+  font-family: 'Segoe UI', sans-serif;
+  margin: 0;
+  padding: 0;
+  background: #fffafa;
 }
 
 /* Estilo do cabeçalho principal */
 header {
-  background-color: #38ad17; /* Fundo verde */
-  padding: 20px; /* Espaçamento interno */
-  color: white; /* Texto branco */
-  text-align: center; /* Centraliza o texto */
-}
-
-/* Barra de navegação */
-nav {
-  background-color: #fff; /* Fundo branco */
-  display: flex; /* Layout flexível */
-  justify-content: space-around; /* Espaço igual entre os itens */
-  padding: 15px 0; /* Espaçamento vertical */
-  box-shadow: 0 2px 5px rgba(0,0,0,0.1); /* Sombra abaixo do menu */
-  position: sticky; /* Fixa o menu no topo ao rolar */
-  top: 0; /* Alinha no topo */
-  z-index: 10; /* Sobrepõe outros elementos */
-}
-
-/* Estilo dos links de navegação */
-nav a {
-  text-decoration: none; /* Remove sublinhado */
-  color: #38ad17; /* Cor do texto verde */
-  font-weight: bold; /* Texto em negrito */
-  padding: 8px 12px; /* Espaçamento interno */
-  border-radius: 8px; /* Bordas arredondadas */
-  transition: background-color 0.3s; /* Suaviza a troca de cor */
-}
-
-/* Efeito ao passar o mouse sobre os links */
-nav a:hover {
-  background-color: #ffe5e5; /* Fundo levemente rosado */
-}
-
-/* Container centralizado */
-.container {
-  max-width: 800px; /* Largura máxima */
-  margin: 40px auto; /* Centraliza com margem */
-  padding: 20px; /* Espaçamento interno */
-}
-
-/* Estilo padrão para sections */
-section {
-  display: block; /* Mantém visível */
-}
-
-/* Estilo para section ativa com animação */
-section.active {
-  display: block;
-  animation: fadeIn 0.5s ease; /* Animação de aparecimento */
-}
-
-/* Animação de aparecimento */
-@keyframes fadeIn {
-  from { opacity: 0; transform: translateY(10px); } /* Começa invisível e deslocado */
-  to { opacity: 1; transform: translateY(0); } /* Termina visível no lugar */
-}
-
-/* Rodapé da página */
-footer {
-  text-align: center; /* Centraliza o texto */
+  background-color: #38ad17;
   padding: 20px;
-  background-color: #eee; /* Cinza claro */
-  margin-top: 40px; /* Espaçamento acima */
-}
-
-
-/* Estilo dos cartões de conteúdo */
-.card {
-  background: white; /* Fundo branco */
-  padding: 20px;
-  border-radius: 12px; /* Bordas arredondadas */
-  margin-bottom: 2rem; /* Espaçamento inferior */
-  box-shadow: 0 4px 12px rgba(0,0,0,0.08); /* Sombra leve */
-}
-
-/* Efeito hover nos cards */
-.card:hover {
-  cursor: pointer; /* Cursor de mão */
-  transition: all ease-in-out 0.6s; /* Animação suave */
-  transform: scale(1.05); /* Aumenta o tamanho */
-}
-
-/* Caixa de busca */
-.search-box {
-  text-align: center;
-  margin-bottom: 20px;
-}
-
-/* Input da busca */
-.search-box input {
-  padding: 10px;
-  width: 80%;
-  max-width: 400px;
-  font-size: 16px;
-  border-radius: 8px;
-  border: 1px solid #ccc;
-}
-
-/* Botão de voltar */
-.botao-voltar {
-  display: inline-block;
-  margin-top: 1rem;
-  background-color: #004d26;
   color: white;
-  padding: 10px 25px;
-  text-decoration: none;
-  border-radius: 25px;
-  font-weight: bold;
+  text-align: center;
 }
 
-/* Botão de login */
-.botao-login {
-  margin-top: 1rem;
-  display: inline-block;
+/* Navegação */
+nav {
   background-color: #ffffff;
-  color: #007c3c;
-  padding: 10px 20px;
+  display: flex;
+  justify-content: center;
+  gap: 2.5rem;
+  padding: 16px 20px;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  border-bottom: 2px solid #e8f5e9;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+nav a {
+  position: relative;
   text-decoration: none;
-  border-radius: 20px;
-  font-weight: bold;
+  color: #38ad17;
+  font-weight: 600;
+  font-size: 1rem;
+  padding: 8px 14px;
+  border-radius: 6px;
+  transition: all 0.3s ease;
+}
+nav a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 3px;
+  width: 0;
+  background-color: #38ad17;
+  transition: width 0.3s ease;
+  border-radius: 2px;
+}
+nav a:hover::after {
+  width: 100%;
 }
 
-/* Botão de cadastro */
+/* Botões de login e cadastro */
+.botao-login,
 .botao-cadastro {
   display: inline-block;
   margin-top: 1rem;
-  background-color: #007c3c;
-  color: white;
   padding: 10px 20px;
-  border-radius: 25px;
   text-decoration: none;
   font-weight: bold;
+  border-radius: 25px;
+  cursor: pointer;
+}
+.botao-login {
+  background-color: #ffffff;
+  color: #007c3c;
+}
+.botao-login:hover {
+  background-color: #f0f0f0;
+}
+.botao-cadastro {
+  background-color: #007c3c;
+  color: #ffffff;
+}
+.botao-cadastro:hover {
+  background-color: #005f2c;
+}
+
+/* Barra de pesquisa */
+.barra-pesquisa form {
+  display: flex;
+  gap: 10px;
+  padding: 12px 20px;
+  background-color: #ffffff;
+  border-radius: 16px;
+  max-width: 900px;
+  margin: 20px auto;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  align-items: center;
+}
+.input-pesquisa {
+  flex: 2;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  font-size: 16px;
+}
+.botao-pesquisar {
+  background-color: #4CAF50;
+  color: white;
+  padding: 11px;
+  border: none;
+  border-radius: 10px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+.botao-pesquisar:hover {
+  background-color: #45a049;
 }
 
 /* Seção de serviços */
@@ -147,65 +118,204 @@ footer {
   padding: 2rem;
   background-color: #ffffff;
 }
-
-/* Grid para organizar os serviços */
 .grid-servicos {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(140px, 1fr)); /* Grid responsivo */
-  gap: 1rem;
-  margin-top: 1rem;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 20px;
+  margin-top: 30px;
 }
-
-/* Cartão de cada serviço */
 .card-servico {
-  background-color: #e6f5ec; /* Verde bem claro */
-  padding: 1.5rem;
+  background-color: #e6f5ec;
+  padding: 20px;
+  border-radius: 20px;
   text-align: center;
-  border-radius: 15px;
-  font-size: 1.1rem;
-  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-}
-
-/* Seção de depoimentos */
-.depoimentos {
-  background-color: #f0fbf6;
-  padding: 2rem;
-  text-align: center;
-}
-
-/* Grid para organizar os depoimentos */
-.depoimentos-grid {
   display: flex;
-  flex-wrap: wrap; /* Permite quebra de linha */
-  justify-content: center; /* Centraliza os depoimentos */
-  gap: 2rem;
-  margin-top: 1rem;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: 18px;
+  box-shadow: 0 6px 15px rgba(0,0,0,0.12);
+  transition: transform 0.3s, box-shadow 0.3s;
+  cursor: pointer;
+  overflow: hidden;
+}
+.card-servico i {
+  font-size: 36px;
+  color: #333;
+  margin-bottom: 15px;
+  transition: color 0.3s ease;
+}
+.card-servico .descricao {
+  font-size: 16px;
+  color: #555;
+  margin-top: 10px;
+  opacity: 0.8;
+  transition: opacity 0.3s ease;
+}
+.card-servico:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.15);
+}
+.card-servico:hover i {
+  color: #38ad17;
+}
+.card-servico:hover .descricao {
+  opacity: 1;
+}
+.card-servico:active {
+  transform: scale(0.98);
 }
 
-/* Cartão individual de depoimento */
-.depo-card {
+/* Cards de profissionais */
+.card-profissional {
   background-color: #ffffff;
-  padding: 1rem;
-  border-radius: 12px;
-  width: 250px;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  padding: 20px;
+  border-radius: 15px;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 6px 15px rgba(0,0,0,0.1);
+  position: relative;
+  overflow: hidden;
+  margin-bottom: 1.5rem;
+  cursor: pointer;
+}
+.card-profissional:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 30px rgba(0,0,0,0.15);
 }
 
-/* Imagem do depoente */
-.depo-card img {
-  width: 80px;
-  height: 80px;
-  border-radius: 50%; /* Deixa a imagem circular */
+/* Foto do profissional */
+.foto-profissional {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  margin-bottom: 15px;
+  object-fit: cover;
+  border: 3px solid #ccc;
+  transition: transform 0.3s ease;
+}
+.card-profissional:hover .foto-profissional {
+  transform: scale(1.1);
 }
 
-/* Estilos específicos para telas menores */
+.card-profissional h3 {
+  font-size: 20px;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 10px;
+}
+.card-profissional p {
+  font-size: 14px;
+  color: #777;
+  margin-bottom: 15px;
+  opacity: 0.8;
+  transition: opacity 0.3s ease;
+}
+.card-profissional:hover p {
+  opacity: 1;
+}
+
+/* Botão de WhatsApp */
+.botao-whats {
+  display: inline-block;
+  background-color: #25d366;
+  color: white;
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 25px;
+  font-size: 14px;
+  font-weight: bold;
+  transition: background-color 0.3s, transform 0.3s;
+}
+.botao-whats:hover {
+  background-color: #128c7e;
+  transform: scale(1.1);
+}
+
+/* Cartão em destaque (ao clicar) */
+.card-profissional.destaque {
+  transform: scale(1.1);
+  box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+}
+.card-profissional.destaque:hover {
+  transform: scale(1.15);
+  box-shadow: 0 12px 30px rgba(0,0,0,0.25);
+}
+
+/* Botão de voltar */
+.botao-voltar {
+  background-color: #004d26;
+  color: white;
+  display: inline-block;
+  margin-top: 1rem;
+  padding: 10px 20px;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 25px;
+  cursor: pointer;
+}
+
+/* Modal */
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,0.6);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+.modal-conteudo {
+  background-color: white;
+  border-radius: 15px;
+  padding: 20px;
+  width: 90%;
+  max-width: 500px;
+  text-align: center;
+  position: relative;
+  box-shadow: 0 0 20px rgba(0,0,0,0.3);
+}
+.modal-conteudo img {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  margin-bottom: 15px;
+  object-fit: cover;
+  border: 3px solid #ccc;
+}
+.modal-conteudo h2 {
+  margin-bottom: 5px;
+}
+.modal-conteudo p {
+  margin: 5px 0;
+}
+.botao-whatsapp {
+  background-color: #25D366;
+  color: white;
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 8px;
+  display: inline-block;
+  margin-top: 15px;
+  font-weight: bold;
+}
+.botao-whatsapp:hover {
+  background-color: #128c7e;
+}
+.botao-fechar {
+  position: absolute;
+  top: 8px;
+  right: 12px;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+/* Responsivo */
 @media (max-width: 600px) {
   .grid-servicos {
-      grid-template-columns: 1fr 1fr; /* 2 colunas no grid */
-  }
-
-  .depoimentos-grid {
-      flex-direction: column; /* Empilha os depoimentos */
-      align-items: center; /* Centraliza na vertical */
+    grid-template-columns: 1fr 1fr;
   }
 }

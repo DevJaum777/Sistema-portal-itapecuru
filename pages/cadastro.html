@@ -21,7 +21,7 @@
     <form onsubmit="irParaServicos(event)">
       <label>Nome Completo</label>
       <input type="text" placeholder="Seu nome completo" required />
-
+    
       <label>Profissão</label>
       <select required>
         <option value="">Selecione</option>
@@ -32,18 +32,24 @@
         <option>Encanador</option>
         <option>Outro</option>
       </select>
-
+    
       <label>Telefone / WhatsApp</label>
       <input type="tel" placeholder="(98) 9XXXX-XXXX" required />
-
+    
       <label>Descrição do Serviço</label>
       <textarea rows="4" placeholder="Conte um pouco sobre o que você faz..."></textarea>
-
+    
       <label>Bairro em Itapecuru Mirim</label>
       <input type="text" placeholder="Ex: Roseana Sarney" required />
-
+    
+      <!-- NOVO CAMPO PARA FOTO -->
+      <label>Foto de Perfil</label>
+      <input type="file" accept="image/*" onchange="mostrarPreview(this)" />
+      <div id="previewFoto" style="margin-top: 10px;"></div>
+    
       <button class="button-cad" type="submit">Cadastrar</button>
     </form>
+    
   </div>
 
   <footer>

@@ -1,3 +1,4 @@
+<!-- initialPage.html -->
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
@@ -7,7 +8,6 @@
   <link rel="stylesheet" href="../style/initialPage.css">
   <link rel="stylesheet" href="../fontawesome-free-6.7.2-web/fontawesome-free-6.7.2-web/css/all.min.css">
 </head>
-
 <body>
 
   <header>
@@ -17,69 +17,46 @@
   </header>
 
   <nav>
-    <a href="paginicial.html">Início</a>
-    <a href="servicos.html">Serviços</a>
+    <a href="#" id="btnInicio">Início</a>
     <a href="cadastro.html">Cadastro</a>
     <a href="sobre.html">Sobre</a>
   </nav>
 
-  <div class="container">
-    <section class="intro">
-      <h2>Visibilidade para Profissionais Locais</h2>
-      <p>Cadastre-se na nossa plataforma e seja facilmente encontrado pelos moradores da cidade.</p>
-      <a href="cadastro.html" class="botao-cadastro"><i class="fa-solid fa-circle-plus"></i> Quero me cadastrar</a>
-    </section>
+  <!-- Barra de pesquisa -->
+  <section class="barra-pesquisa">
+    <form id="formBusca">
+      <input type="text" id="campoBusca" placeholder="Buscar por nome ou serviço..." class="input-pesquisa">
+      <button type="submit" class="botao-pesquisar"><i class="fa-solid fa-magnifying-glass"></i></button>
+    </form>
+  </section>
 
-    <section class="servicos">
-      <h2><i class="fa-solid fa-screwdriver-wrench"></i> Principais Serviços</h2>
-      <div class="grid-servicos">
-        <div class="card-servico"><i class="fa-solid fa-hammer"></i> Marceneiro</div>
-        <div class="card-servico"><i class="fa-solid fa-bolt"></i> Eletricista</div>
-        <div class="card-servico"><i class="fa-solid fa-sink"></i> Encanador</div>
-        <div class="card-servico"><i class="fa-solid fa-broom"></i> Diarista</div>
-        <div class="card-servico"><i class="fa-solid fa-scissors"></i> Barbeiro</div>
-        <div class="card-servico"><i class="fa-solid fa-user-nurse"></i> Enfermeira</div>
-      </div>
-    </section>
-
-    <section class="depoimentos">
-      <h2><i class="fa-solid fa-comment-dots"></i> Profissionais recomendam</h2>
-      <div class="depoimentos-grid">
-        <div class="depo-card">
-          <img src="https://randomuser.me/api/portraits/men/35.jpg" alt="José">
-          <p>"A visibilidade que ganhei aqui mudou minha renda."</p>
-          <strong>José - Eletricista</strong>
-        </div>
-        <div class="depo-card">
-          <img src="https://randomuser.me/api/portraits/women/44.jpg" alt="Ana">
-          <p>"Agora tenho clientes todos os dias da semana!"</p>
-          <strong>Ana - Diarista</strong>
-        </div>
-      </div>     
-      <div class="depoimentos-grid">
-        <div class="depo-card">
-          <img src="https://randomuser.me/api/portraits/men/34.jpg" alt="José">
-          <p>"O portal fez minha barbearia decolar.."</p>
-          <strong>Lucas - Barbeiro</strong>
-        </div>
-        <div class="depo-card">
-          <img src="https://randomuser.me/api/portraits/women/45.jpg" alt="Ana">
-          <p>"Agora atendo pacientes todos os dias da semana. Só gratidão!"</p>
-          <strong>Maria - Enfermeira</strong>
-        </div>
-      </div>
-    </section>
-
-    <div class="voltar-container">
-      <a href="sobre.html" class="botao-voltar"><i class="fa-solid fa-circle-info"></i> Sobre o Projeto</a>
+  <!-- Lista de serviços -->
+  <section class="servicos" id="secaoServicos">
+    <h1><i class="fa-solid fa-screwdriver-wrench"></i> Acesse aqui os serviços disponíveis</h1>
+    <div class="grid-servicos" id="gridServicos">
+      <!-- Cards de serviços são inseridos aqui via JS -->
     </div>
+  </section>
+  
+  <!-- Modal do profissional -->
+  <div id="modalProfissional" class="modal" style="display: none;">
+    <div class="modal-conteudo" id="conteudoModal"></div>
   </div>
+
+  <!-- Lista de profissionais (inicialmente escondida) -->
+  <section id="listaProfissionais" class="servicos" style="display: none;">
+    <h2>Profissionais disponíveis</h2>
+    <div id="cardsProfissionais"></div>
+    <a class="botao-voltar" onclick="voltarServicos()"><i class="fa-solid fa-arrow-left"></i> Voltar</a>
+  </section>
 
   <footer>
     © 2025 Profissionais de Itapecuru Mirim
   </footer>
 
+  <script src="../js/initialPage.js"></script>
 </body>
 </html>
+
 
 
